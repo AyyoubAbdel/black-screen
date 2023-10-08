@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100vh;
+    transition: background-color 0.5s ease; /* Smooth transition for background color */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    cursor: pointer;
+    border: 2px solid #000;
+}
+
+/* Add specific styles for each color */
+.box[data-color="black"] {
+    background-color: black;
+}
+
+.box[data-color="red"] {
+    background-color: red;
+}
+
+.box[data-color="green"] {
+    background-color: green;
+}
+
+.box[data-color="blue"] {
+    background-color: blue;
+}
+
+.box[data-color="yellow"] {
+    background-color: yellow;
+}
+/* Style the header */
+header {
+    
+    text-align: center;
+    
+    padding: 20px;
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    list-style: none;
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 20px;
+    
+}
+header ul li:hover{
+    letter-spacing: 1px;
+    color: #421dc9;
+}
+
+/* Style the footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
